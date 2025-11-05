@@ -4,15 +4,16 @@
     android:layout_height="wrap_content"
     android:orientation="vertical">
     <TextView
-        android:id="@+id/tempText"
-        android:text="-18 C"
         android:layout_margin="10dp"
+        android:id="@+id/time"
+        android:text="10:00"
+        android:textSize="25dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
     <TextView
+        android:id="@+id/tempText"
         android:layout_margin="10dp"
-        android:id="@+id/condition"
-        android:text="Облачно"
+        android:text="-10 C"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 </LinearLayout>
