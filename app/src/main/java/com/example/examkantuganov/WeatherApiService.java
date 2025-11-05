@@ -1,0 +1,16 @@
+package com.example.examkantuganov;
+
+import retrofit2.Call;
+import retrofit2.http.GET;
+import retrofit2.http.Header;
+import retrofit2.http.Query;
+
+public interface WeatherApiService {
+    @GET("v2/forecast")
+    Call<WeatherResponce> getApiService(
+            @Header("X-Yandex-Weather-Key") String ApiKey,
+            @Query("lat") String lat,
+            @Query("lon") String lon,
+            @Query("limit") int limit
+    );
+}
